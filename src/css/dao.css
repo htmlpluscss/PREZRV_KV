@@ -1,0 +1,62 @@
+.dao {
+
+	padding: 180px 0 150px;
+	position: relative;
+	text-align: center;
+
+	&__title {
+
+		margin: 0 auto 145px;
+		max-width: 768px;
+
+	}
+
+	&__list {
+
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 60px;
+		row-gap: 80px;
+		justify-content: space-between;
+
+		& + & {
+
+			margin-top: 40px;
+			align-items: flex-end;
+
+		}
+
+	}
+
+	&__item {
+
+		width: calc( (100% - 120px) / 3 );
+
+		.h4 {
+
+			margin: 16px 0 10px;
+
+		}
+
+		&--white {
+
+			padding: 44px 42px;
+			border-radius: 40px 0;
+			width: 668px;
+			text-align: left;
+			position: relative;
+			background-color: #fff;
+			margin-bottom: 8px;
+
+		}
+
+	}
+
+	&__img {
+
+		display: flex;
+		justify-content: center;
+
+	}
+
+}

@@ -1,0 +1,64 @@
+.nfts {
+
+	text-align: center;
+	padding: 180px 0 146px;
+
+	&__title {
+
+		margin-bottom: 42px;
+
+	}
+
+	&__row {
+
+		display: flex;
+		padding-right: 12px;
+
+		&--between {
+
+			justify-content: space-between;
+			margin: 58px 0 74px 0;
+
+		}
+
+		&--right {
+
+			justify-content: flex-end;
+
+		}
+
+	}
+
+	&__item {
+
+		width: var(--column);
+
+	}
+
+	&__img {
+
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+
+	}
+
+	&__row--between &__img {
+
+		height: 276px;
+
+	}
+
+	&__text {
+
+		margin: 28px 0;
+
+		.h5 {
+
+			margin: 13px 0;
+
+		}
+
+	}
+
+}
