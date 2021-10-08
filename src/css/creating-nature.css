@@ -2,7 +2,30 @@
 
 	position: relative;
 	padding: 56px 0;
-	outline:1px solid red;
+	background-image: url(/img/bg-green.png);
+	background-position: center;
+
+	&__bg {
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		pointer-events: none;
+
+		img {
+
+			height: 100%;
+			width: auto;
+			flex-shrink: 0;
+
+		}
+
+	}
 
 	.h4 {
 
