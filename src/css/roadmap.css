@@ -1,0 +1,80 @@
+.roadmap {
+
+	padding: 171px 0 44px;
+
+	&__title {
+
+		text-align: center;
+		margin-bottom: 62px;
+
+	}
+
+	&__list {
+
+		margin-bottom: 101px;
+
+	}
+
+	&__item {
+
+		margin-top: 40px;
+		display: flex;
+		height: 104px;
+
+	}
+
+	&__date {
+
+		width: 192px;
+		color: var(--green);
+		flex-shrink: 0;
+
+	}
+
+	&__year {
+
+		margin-top: 8px;
+		display: block;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 26px;
+		color: var(--pink);
+
+	}
+
+	&__row {
+
+		flex-grow: 1;
+
+	}
+
+	&__step {
+
+		width: 210px;
+		background-color: var(--pink);
+		border-radius: 10px;
+		padding: 10px;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 26px;
+		height: 104px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		span {
+
+			min-width: 160px;
+
+		}
+
+		&s {
+
+			display: flex;
+			column-gap: 29px;
+
+		}
+
+	}
+
+}
