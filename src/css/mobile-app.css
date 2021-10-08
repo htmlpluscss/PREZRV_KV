@@ -1,0 +1,23 @@
+.mobile-app {
+
+	padding: 94px 0 80px;
+	outline:1px solid red;
+	position: relative;
+
+	.h2 {
+
+		padding-left: calc( var(--indent) * 1.5 );
+
+	}
+
+	small {
+
+		display: block;
+		font-weight: normal;
+		font-size: 22px;
+		line-height: 32px;
+		margin-top: 24px;
+
+	}
+
+}
