@@ -29,7 +29,13 @@
 				form.classList.remove('is-loading');
 				btn.disabled = false;
 
-				modalShow('thank');
+				const eventModalShow = new CustomEvent("modalShow", {
+					detail: {
+						selector: "thank"
+					}
+				});
+
+				modal.dispatchEvent(eventModalShow);
 
 			});
 

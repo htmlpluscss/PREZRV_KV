@@ -1,6 +1,7 @@
 .roadmap {
 
 	padding: 171px 0 44px;
+	position: relative;
 
 	&__title {
 

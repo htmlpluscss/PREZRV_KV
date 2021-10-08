@@ -1,6 +1,7 @@
 .example {
 
 	padding: 168px 0 151px;
+	position: relative;
 
 	&__title {
 

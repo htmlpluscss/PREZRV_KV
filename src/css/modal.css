@@ -24,25 +24,23 @@
 
 	&__item {
 
-		background-color: #fff;
-		padding: 38px;
+		background-color: var(--bg);
+		padding: 117px 68px 110px 70px;
 		max-width: 100%;
-		border: 1px solid #F4F4F4;
-		box-shadow: 0px 4px 4px rgba(0, 32, 51, 0.04), 0px 8px 24px rgba(0, 32, 51, 0.12);
-		border-radius: 12px;
-		width: 500px;
+		border-radius: 8px;
+		width: 630px;
 
 	}
 
 	&__close-btn {
 
 		position: absolute;
-		top: 20px;
-		right: 30px;
+		top: 19px;
+		right: 19px;
 
 		svg {
 
-			fill: var(--color);
+			stroke: var(--color);
 
 		}
 
@@ -50,7 +48,7 @@
 
 			&:hover {
 
-				opacity: 1;
+				--color: var(--green);
 
 			}
 
@@ -58,22 +56,31 @@
 
 	}
 
-	&__title {
+	&__thank {
 
-		font-size: 20px;
-		line-height: 24px;
-		font-weight: 500;
+		position: relative;
+		padding-left: 175px;
 
-	}
+		svg {
 
-	&__text {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: var(--green);
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 142px;
+			height: 142px;
 
-		margin: 14px 0 26px;
-		font-size: 14px;
-		line-height: 20px;
-		max-width: 400px;
-		font-weight: 300;
-		letter-spacing: 0.1px;
+		}
+
+		.h4 {
+
+			margin-bottom: 20px;
+
+		}
 
 	}
 
@@ -106,7 +113,7 @@
 			bottom: 0;
 			content: '';
 			z-index: 9;
-			opacity: .2;
+			opacity: .4;
 			background-color: var(--color);
 
 		}

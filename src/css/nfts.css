@@ -2,6 +2,7 @@
 
 	text-align: center;
 	padding: 180px 0 146px;
+	position: relative;
 
 	&__title {
 

@@ -1,7 +1,9 @@
 .faq {
 
 	padding: 189px 0 141px;
-outline:1px solid red;
+	position: relative;
+	background: rgba(233, 240, 245, 0.96);
+
 	&__title {
 
 		text-align: center;
