@@ -73,6 +73,16 @@ legend {
 	font-size: 24px;
 	border-radius: 33px;
 
+	@media ($desktop) {
+
+		&:hover {
+
+			--color: var(--green);
+
+		}
+
+	}
+
 	&--black {
 
 		color: var(--bg);
@@ -80,6 +90,16 @@ legend {
 		background-color: var(--color);
 		padding: 0 40px;
 		border-color: var(--color);
+
+		@media ($desktop) {
+
+			&:hover {
+
+				--color: var(--green);
+
+			}
+
+		}
 
 	}
 
@@ -156,6 +176,12 @@ legend {
 	&:invalid {
 
 		box-shadow: none;
+
+	}
+
+	&:valid {
+
+		border-color: var(--green);
 
 	}
 

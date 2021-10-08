@@ -21,6 +21,16 @@
 
 		}
 
+		@media ($desktop) {
+
+			&:hover {
+
+				--color: var(--green);
+
+			}
+
+		}
+
 	}
 
 	.center {

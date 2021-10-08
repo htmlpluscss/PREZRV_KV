@@ -14,6 +14,16 @@
 
 		cursor: pointer;
 
+		@media ($desktop) {
+
+			&:hover {
+
+				color: var(--green);
+
+			}
+
+		}
+
 	}
 
 	&__head {
