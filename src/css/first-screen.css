@@ -8,6 +8,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-image: url(/img/first-screen/bg.png);
+	background-position: top;
+	background-repeat: no-repeat;
 
 	&__bg {
 

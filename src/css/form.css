@@ -72,6 +72,7 @@ legend {
 	font-weight: 600;
 	font-size: 24px;
 	border-radius: 33px;
+	background-color: var(--bg);
 
 	@media ($desktop) {
 
