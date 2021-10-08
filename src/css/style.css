@@ -9,57 +9,6 @@
 @import url(footer.css);
 @import url(modal.css);
 @import url(content.css);
-/*
-@import url(notification.css);
+@import url(social.css);
 
-@import url(main-page.css);
-
-@import url(docs.css);
-
-@import url(pagin.css);
-
-@import url(error-page.css);
-@import url(message.css);
-@import url(tabs.css);
-@import url(swiper.css);
-
-@import url(page-404.css);
-
-@import url(news.css);
-@import url(live-search.css);
-
-
-
-@import url(you-get.css);
-@import url(clients.css);
-
-@import url(contacts.css);
-
-@import url(status.css);
-@import url(search-menu.css);
-@import url(dropdown-toggle.css);
-@import url(checkbox-dropdown.css);
-@import url(tooltip.css);
-@import url(cart.css);
-
-@import url(category.css);
-@import url(catalog.css);
-@import url(filter.css);
-@import url(nouislider.css);
-@import url(slider.css);
-@import url(ratio.css);
-
-@import url(product.css);
-@import url(list-card.css);
-@import url(table.css);
-@import url(accordion.css);
-@import url(progress.css);
-@import url(key-value.css);
-@import url(sort.css);
-@import url(swiper-gallery.css);
-@import url(review-stat.css);
-
-@import url(quality.css);
-
-@import url(account.css);
-@import url(google-translate.css); */
+@import url(first-screen.css);

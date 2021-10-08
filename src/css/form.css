@@ -38,13 +38,23 @@
 
 .btn {
 
-	padding: 0 22px;
-	font-size: 14px;
-	height: 34px;
-	line-height: 34px;
-	font-weight: 500;
-	border-radius: 2px;
-	text-transform: uppercase;
+	padding: 0 52px;
+	border: 2px solid;
+	line-height: 62px;
+	color: var(--color);
+	font-weight: 600;
+	font-size: 24px;
+	border-radius: 33px;
+
+	&--black {
+
+		color: #FDFBF8;
+		border-radius: 40px 0 40px 0;
+		background-color: var(--color);
+		padding: 0 40px;
+		border-color: var(--color);
+
+	}
 
 }
 

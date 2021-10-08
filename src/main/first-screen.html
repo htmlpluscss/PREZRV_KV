@@ -9,37 +9,31 @@
 
 	<div class="center">
 
-		<div class="first-screen__title">
+		<h1 class="first-screen__title h1">
+			{{ title }}
+		</h1>
 
-			<h1 class="first-screen__title-inner">
-
-				<span class="first-screen__title-row">
-					<span>Value Network</span> <span>Labs</span>
-				</span>
-
-				<span class="first-screen__title-row first-screen__title-row--line">
-					<span>Global Online</span> <span>Hackathon.</span>
-				</span>
-
-			</h1>
-
-		</div>
+		<p class="first-screen__description">
+			{{ description }}
+		</p>
 
 		<div class="first-screen__btn">
 
-			<a href="/" class="btn btn--normal btn--outline">
-				Trading
+			<a href="/" class="btn btn--black">
+				White paper
 			</a>
 
-			<a href="/" class="btn btn--normal">
-				Dev
-			</a>
-
-			<a href="/" class="btn btn--normal">
-				Marketing
+			<a href="/" class="btn">
+				Intro Deck
 			</a>
 
 		</div>
+
+	</div>
+
+	<div class="first-screen__social">
+
+{% include "template/social.html" %}
 
 	</div>
 

@@ -1,0 +1,51 @@
+.first-screen {
+
+	padding: 158px 0;
+	min-height: 100vh;
+	position: relative;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__bg {
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		pointer-events: none;
+
+	}
+
+	&__description {
+
+		margin: 29px 0 44px;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 26px;
+		color: var(--green);
+
+	}
+
+	&__btn {
+
+		display: flex;
+		justify-content: center;
+		column-gap: 32px;
+
+	}
+
+	&__social {
+
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 72px;
+
+	}
+
+}

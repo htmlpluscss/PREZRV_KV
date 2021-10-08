@@ -1,0 +1,23 @@
+.social {
+
+	display: flex;
+	align-items: center;
+	column-gap: 30px;
+
+	&__link {
+
+		display: block;
+
+		@media ($desktop) {
+
+			&:hover {
+
+				--color: var(--green);
+
+			}
+
+		}
+
+	}
+
+}

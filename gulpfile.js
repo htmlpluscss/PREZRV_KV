@@ -59,9 +59,9 @@ try {
 
 }
 
-const html = (files, since = {}) => {
+gulp.task('html', () => {
 
-	return gulp.src(files, since)
+	return gulp.src('src/**/index.html')
 		.pipe(plumber())
 		.pipe(debug({title: 'html:'}))
 		.pipe(nunjucksRender({
@@ -75,10 +75,7 @@ const html = (files, since = {}) => {
 		.pipe(w3cjs.reporter())
 		.pipe(gulp.dest('build'))
 
-};
-
-gulp.task('html', () => html('src/**/index.html', {since: gulp.lastRun('html')}));
-gulp.task('html:touch', () => html('src/**/index.html'));
+});
 
 gulp.task('css', () => {
 
@@ -109,14 +106,7 @@ gulp.task('css', () => {
 
 gulp.task('js', () => {
 
-	return gulp.src([
-
-		'src/js/min/*.js',
-		'src/js/js.js',
-		'src/js/*.js'
-
-	], {since: gulp.lastRun('js')})
-
+	return gulp.src('src/js/*.js')
 		.pipe(debug({title: 'js'}))
 		.pipe(sourcemaps.init())
 		.pipe(remember('js'))
@@ -179,12 +169,11 @@ gulp.task('ftp', () => {
 });
 
 gulp.task('watch', () => {
-	gulp.watch('src/js/*.*', gulp.series('js'));
-	gulp.watch('src/css/*.*', gulp.series('css'));
-	gulp.watch('src/**/index.html', gulp.series('html'));
-	gulp.watch(['src/_include/**/*.html','src/template/**/*.html'], gulp.series('html:touch'));
-	gulp.watch(['src/**/*.*', '!src/**/*.{css,html,js}'], gulp.series('copy'));
-	gulp.watch('build/**/*.*', gulp.series('ftp'));
+	gulp.watch('src/js/*', gulp.series('js'));
+	gulp.watch('src/css/*', gulp.series('css'));
+	gulp.watch('src/**/*.html', gulp.series('html'));
+	gulp.watch(['src/**/*', '!src/**/*.{css,html,js}'], gulp.series('copy'));
+	gulp.watch('build/**/*', gulp.series('ftp'));
 });
 
 gulp.task('default', gulp.series(

@@ -12,7 +12,7 @@
 
 }
 
-$desktop: (min-width: 1250px);
-$mdWidth: (max-width: 1249px);
+$desktop: (min-width: 1200px);
+$mdWidth: (max-width: 1119px);
 $smWidth: (max-width: 767px);
 $xsWidth: (max-width: 359px);
