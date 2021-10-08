@@ -75,7 +75,7 @@ legend {
 
 	&--black {
 
-		color: #FDFBF8;
+		color: var(--bg);
 		border-radius: 40px 0 40px 0;
 		background-color: var(--color);
 		padding: 0 40px;
@@ -87,10 +87,9 @@ legend {
 
 .input {
 
-	line-height: 20px;
-	padding: 10px;
-	font-size: 16px;
-	color: var(--color);
+	line-height: 32px;
+	padding: 10px 40px;
+	font-size: 22px;
 
 	width: 100%;
 	font-family: inherit;
@@ -100,25 +99,20 @@ legend {
 	filter: none;
 	-webkit-transform: translateZ(0px);
 
-	background-color: #fff;
-
-	height: 40px;
-	border: 1px solid rgba(0, 66, 105, 0.28);
-	border-radius: 4px;
-	letter-spacing: 0.1px;
-	color: rgba(0, 32, 51, 1);
+	background-color: var(--bg);
+	height: 66px;
+	border: 3px solid var(--color);
+	border-radius: 33px;
+	color: #4b4e4f;
 
 	@media ($desktop) {
 
-		font-size: 14px;
 
 	}
 
 	&::placeholder {
 
-		opacity: 1;
-		font-size: 14px;
-		color: rgba(0, 0, 0, 0.12);
+		opacity: .5;
 
 	}
 
@@ -138,7 +132,12 @@ legend {
 	&:focus {
 
 		outline: none;
-		border-color: rgba(0, 66, 105, 1);
+
+		&::placeholder {
+
+			opacity: 1;
+
+		}
 
 	}
 

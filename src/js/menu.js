@@ -25,3 +25,16 @@
 	}
 
 })(document.querySelector('.btn-menu-toggle'));
+
+
+// page up
+
+( btn => {
+
+	if(btn) {
+
+		btn.addEventListener('click', () => document.body.scrollIntoView({behavior: "smooth"}));
+
+	}
+
+})(document.querySelector('.footer__up'));
