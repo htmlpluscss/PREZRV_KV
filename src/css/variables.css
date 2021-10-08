@@ -1,0 +1,18 @@
+:root {
+
+	--color: #313137;
+	--pink: #f1c9dc;
+	--green: #a9d379;
+	--error: #f00;
+	--bg: #fdfbf8;
+
+	--transitionDefault: 0.3s;
+
+	--indent: 65px;
+
+}
+
+$desktop: (min-width: 1250px);
+$mdWidth: (max-width: 1249px);
+$smWidth: (max-width: 767px);
+$xsWidth: (max-width: 359px);

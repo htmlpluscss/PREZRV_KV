@@ -1,0 +1,137 @@
+.btn,
+.button {
+
+	border: 0;
+	border-radius: 0;
+	font-family: inherit;
+	background-color: transparent;
+	transition: var(--transitionDefault);
+	user-select: none;
+	position: relative;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+	display: block;
+
+	&:hover {
+
+		cursor: pointer;
+
+	}
+
+	&:focus {
+
+		outline: none;
+
+	}
+
+	&:disabled {
+
+		pointer-events: none;
+
+	}
+
+}
+
+.btn {
+
+	padding: 0 22px;
+	font-size: 14px;
+	height: 34px;
+	line-height: 34px;
+	font-weight: 500;
+	border-radius: 2px;
+	text-transform: uppercase;
+
+}
+
+.input {
+
+	line-height: 20px;
+	padding: 10px;
+	font-size: 16px;
+	color: var(--color);
+
+	width: 100%;
+	font-family: inherit;
+	position: relative;
+	appearance: none;
+	display: block;
+	filter: none;
+	-webkit-transform: translateZ(0px);
+
+	background-color: #fff;
+
+	height: 40px;
+	border: 1px solid rgba(0, 66, 105, 0.28);
+	border-radius: 4px;
+	letter-spacing: 0.1px;
+	color: rgba(0, 32, 51, 1);
+
+	@media ($desktop) {
+
+		font-size: 14px;
+
+	}
+
+	&::placeholder {
+
+		opacity: 1;
+		font-size: 14px;
+		color: rgba(0, 0, 0, 0.12);
+
+	}
+
+	&::-ms-clear {
+
+		display: none;
+
+	}
+
+	&:-webkit-autofill {
+
+		animation-name: autofill;
+		animation-fill-mode: both;
+
+	}
+
+	&:focus {
+
+		outline: none;
+		border-color: rgba(0, 66, 105, 1);
+
+	}
+
+	&:disabled {
+
+		pointer-events: none;
+
+	}
+
+	&--error {
+
+		border-color: var(--error);
+
+	}
+
+	&:invalid {
+
+		box-shadow: none;
+
+	}
+
+}
+
+@keyframes autofill {
+
+	to {
+
+		color: var(--color);
+		background-color: #fff;
+
+	}
+
+}

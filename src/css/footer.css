@@ -1,0 +1,74 @@
+.footer {
+
+	flex-shrink: 0;
+	position: relative;
+	padding: 18px 0;
+	background-color: var(--color);
+	color: #fff;
+	margin-top: 34px;
+
+	&__copyright {
+
+		font-size: 12px;
+		line-height: 15px;
+
+		@media ($smWidth) {
+
+			font-size: 11px;
+
+		}
+
+	}
+
+	.main-page & {
+
+		color: var(--grey);
+		background-color: transparent;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+	}
+
+	.page-blue & {
+
+		color: rgba(255, 255, 255, .5);
+		padding: 22px 0;
+		background-color: transparent;
+
+	}
+
+	&__social {
+
+		display: flex;
+		column-gap: 11px;
+		margin-bottom: 18px;
+
+		a {
+
+			display: block;
+			opacity: .4;
+			transition: var(--transitionDefault);
+
+			@media ($desktop) {
+
+				&:hover {
+
+					opacity: 1;
+
+				}
+
+			}
+
+		}
+
+		svg {
+
+			fill: var(--color);
+
+		}
+
+	}
+
+}

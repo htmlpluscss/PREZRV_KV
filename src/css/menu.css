@@ -1,0 +1,186 @@
+.menu {
+
+	display: flex;
+	column-gap: 50px;
+
+	@media ($mdWidth) {
+
+		display: block;
+
+	}
+
+	&__item {
+
+		@media ($desktop) {
+
+			&:hover {
+
+				--text: var(--blue);
+
+			}
+
+		}
+
+	}
+
+	&__service {
+
+		display: flex;
+		align-items: center;
+		column-gap: 12px;
+		cursor: pointer;
+
+		svg {
+
+			fill: var(--color);
+
+		}
+
+		&::after {
+
+			position: absolute;
+			height: 3px;
+			left: -14px;
+			right: -14px;
+			bottom: -22px;
+			content: '';
+			opacity: 0;
+			transition: var(--transitionDefault);
+			background-color: var(--blue);
+			pointer-events: none;
+
+		}
+
+		.menu-service-show & {
+
+			--text: var(--blue);
+			--color: var(--blue);
+
+			svg {
+
+				transform: scaleY(-1);
+
+			}
+
+			&::after {
+
+				opacity: 1;
+
+			}
+
+		}
+
+	}
+
+	&__link {
+
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 24px;
+		white-space: nowrap;
+		transition: var(--transitionDefault);
+		color: var(--text);
+
+		@media ($mdWidth) {
+
+
+
+		}
+
+	}
+
+}
+
+.menu-service {
+
+	height: 0;
+
+	&__inner {
+
+		opacity: 0;
+		background-color: #fff;
+		transition: var(--transitionDefault);
+		position: relative;
+		pointer-events: none;
+		margin-top: -4px;
+		border-top: 1px solid rgba(0, 0, 0, .12);
+
+		.menu-service-show & {
+
+			opacity: 1;
+			pointer-events: auto;
+
+			&::after {
+
+				opacity: 1;
+				transition: opacity var(--transitionDefault) var(--transitionDefault);
+
+			}
+
+		}
+
+		&::before {
+
+			position: absolute;
+			height: 512px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			content: '';
+			pointer-events: none;
+			box-shadow: 0 4px 4px rgba(0, 32, 51, 0.04), 0 8px 24px rgba(0, 32, 51, 0.12);
+
+		}
+
+	}
+
+	&__list {
+
+		display: flex;
+		column-gap: 50px;
+		margin-left: 200px;
+		padding: 20px 0 24px;
+
+	}
+
+	&__item {
+
+		width: 146px;
+
+	}
+
+	&__link {
+
+		display: block;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.15px;
+		color: var(--text);
+		transition: var(--transitionDefault);
+
+		@media ($desktop) {
+
+			&:hover {
+
+				color: var(--blue);
+
+			}
+
+		}
+
+	}
+
+	&__desc {
+
+		display: block;
+		margin-top: 4px;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 16px;
+		letter-spacing: 0.4px;
+		color: var(--text);
+
+	}
+
+}

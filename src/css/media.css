@@ -1,0 +1,68 @@
+.visible-md,
+.visible-sm {
+
+	display: none;
+
+}
+
+.center {
+
+	width: 1120px;
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+
+}
+
+@media ($desktop) {
+
+
+}
+
+@media ($mdWidth) {
+
+	.hidden-md {
+
+		display: none !important;
+
+	}
+
+	.visible-md {
+
+		display: block;
+
+	}
+
+	.center {
+
+		width: 750px;
+
+	}
+
+}
+
+@media ($smWidth) {
+
+	.hidden-sm {
+
+		display: none !important;
+
+	}
+
+	.visible-sm {
+
+		display: block;
+
+	}
+
+	.center {
+
+		width: 500px;
+
+	}
+
+}
+
+@media ($xsWidth) {
+
+}

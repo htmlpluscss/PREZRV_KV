@@ -1,0 +1,169 @@
+.live-search {
+
+	position: relative;
+
+	&--open &__result {
+
+		opacity: 1;
+		pointer-events: auto;
+
+	}
+
+	&__input {
+
+		&:focus {
+
+			border-color: #99cbff;
+			box-shadow: 0 0 0 1px #99cbff;
+
+		}
+
+	}
+
+	&__ico {
+
+		position: absolute;
+		top: 0;
+		right: 8px;
+		bottom: 0;
+		margin: auto;
+		pointer-events: none;
+		fill: var(--color);
+
+	}
+
+	&__result {
+
+		position: absolute;
+		width: 100%;
+		top: 100%;
+		left: 0;
+		box-shadow: var(--box-shadow);
+		border-radius: 5px;
+		background-color: #fff;
+		opacity: 0;
+		z-index: 5;
+		margin-top: 10px;
+		pointer-events: none;
+		transition: opacity var(--transitionDefault);
+		padding: 10px 0;
+		max-height: 410px;
+		overflow-y: auto;
+
+		scrollbar-width: thin;
+		scrollbar-color: #bbc0c6 transparent;
+
+		&::-webkit-scrollbar {
+
+			width: 6px;
+			border-radius: 3px;
+			background-color: transparent;
+
+		}
+
+		&::-webkit-scrollbar-thumb {
+
+			border-radius: 3px;
+			background-color: #bbc0c6;
+
+		}
+
+		&-item {
+
+			padding: 8px 26px;
+			font-size: 14px;
+			line-height: 16px;
+			transition: var(--transitionDefault);
+			width: 100%;
+			display: block;
+			text-align: left;
+			color: var(--color);
+
+			@media ($smWidth) {
+
+				padding: 8px 16px;
+
+			}
+
+			&:hover {
+
+				background-color: var(--snow);
+
+			}
+
+			small {
+
+				display: block;
+				font-size: 12px;
+				line-height: 14px;
+				color: var(--grey);
+
+			}
+
+		}
+
+	}
+
+}
+
+.search-result-not {
+
+	text-align: center;
+	color: var(--grey);
+	max-width: 500px;
+	margin: 78px auto;
+
+	@media ($smWidth) {
+
+		margin: 16px;
+
+		svg {
+
+			width: 43px;
+			height: 43px;
+			margin: auto;
+
+		}
+
+		p {
+
+			font-size: 18px;
+			line-height: 1.2;
+			margin: 10px 0;
+
+		}
+
+		small {
+
+			font-size: 16px;
+			line-height: 1.2;
+
+		}
+
+	}
+
+	svg {
+
+		margin: 30px auto;
+		display: block;
+
+	}
+
+	p {
+
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 33px;
+		margin: 30px 0;
+
+	}
+
+	small {
+
+		display: block;
+		font-size: 18px;
+		line-height: 21px;
+
+	}
+
+}
