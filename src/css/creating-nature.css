@@ -1,0 +1,13 @@
+.creating-nature {
+
+	position: relative;
+	padding: 56px 0;
+	outline:1px solid red;
+
+	.h4 {
+
+		padding-left: calc( var(--indent) * 1.5 );
+
+	}
+
+}
