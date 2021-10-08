@@ -1,0 +1,73 @@
+
+<article class="faq" id="faq">
+
+	<div class="section-circle">
+
+		<img src="/img/faq/circle.svg" width="156" height="156" loading="lazy" alt="">
+
+	</div>
+
+	<div class="center">
+
+		<h2 class="faq__title h2">
+			FAQ
+		</h2>
+
+		<div class="accordion">
+
+{% set list = [
+
+	{
+		name : "Why blockchain?",
+		text : "Almost every blockchain transaction can be publically accessed and easily viewed. Transactions cannot be altered or reversed. Blockchain also allows anyone in the world to participate in a project, regardless of class or country"
+	},
+	{
+		name : "Why NFTs?",
+		text : "Once an NFT is minted, it creates immutable provenance of the data used to create it. This data could be art, music - or financial contracts and records of philantropy. “Utility” is a less-explored function of NFTs, but is highly critical."
+	},
+	{
+		name : "Why a DAO?",
+		text : "A DAO enables a project to be truly community run, no longer bound by the buerocracy and corruption which is endemic in centralized private and public sectors. DAOs make engagement far easier and promote integrity."
+	},
+	{
+		name : "Is this an investment, or a donation?",
+		text : "Neither. Our tokens are for governance, and our NFTs are for those who want to help nature while obtaining something tangible in return. NFTEIs do not convey ownership of underlying natural assets, or entitle you to tax write-offs."
+	},
+	{
+		name : "What makes this better?",
+		text : "We aren’t dependant on the same institutions which caused our current environmental crisis in the first place. We aren’t reliant on grants or donations from governments or private groups which put their own interests before the greater good. Those who rely on old systems are simply not going to make it."
+	},
+	{
+		name : "Why should I trust you?",
+		text : "Our recordbooks are both viewable at any time and updated in real time, unlike the quarterly reports of typical organizations. We also focus on tangible initatives which can be physically verified by anyone. Additionally, our team is public, and is happy to speak to anyone who contacts us. We welcome skeptisim in philantropy - its part of the reason we started this project!"
+	}
+
+] %}
+
+{% for item in list %}
+
+			<section class="accordion__item">
+
+				<h3 class="accordion__head accordion__btn h4">
+					{{ item.name }}
+				</h3>
+
+				<div class="accordion__body">
+
+					<div class="accordion__inner">
+
+						{{ item.text | safe }}
+
+					</div>
+
+				</div>
+
+			</section>
+
+{% endfor %}
+
+		</div>
+
+	</div>
+
+</article>

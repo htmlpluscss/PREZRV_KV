@@ -29,12 +29,7 @@
 				form.classList.remove('is-loading');
 				btn.disabled = false;
 
-				if (result.msg) {
-
-					form.reset();
-					modal.ok(result.msg.title, result.msg.text);
-
-				}
+				modalShow('thank');
 
 			});
 

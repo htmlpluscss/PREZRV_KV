@@ -1,0 +1,12 @@
+.faq {
+
+	padding: 189px 0 141px;
+outline:1px solid red;
+	&__title {
+
+		text-align: center;
+		margin-bottom: 60px;
+
+	}
+
+}

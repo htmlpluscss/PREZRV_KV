@@ -1,0 +1,77 @@
+.accordion {
+
+	position: relative;
+
+	&__item {
+
+		margin-top: 25px;
+		background-color: #FDFBF8;
+		border-radius: 10px;
+
+	}
+
+	&__btn {
+
+		cursor: pointer;
+
+	}
+
+	&__head {
+
+		padding: 30px var(--indent);
+		display: flex;
+		align-items: center;
+		transition: padding var(--transitionDefault);
+		justify-content: space-between;
+
+		&::after {
+
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='57' height='57' fill='none' viewBox='0 0 57 57'%3E%3Cpath stroke='%23313137' stroke-width='3' d='M.5 28.18h56M28.5.18v56'/%3E%3C/svg%3E");
+			width: 57px;
+			height: 57px;
+			content: '';
+			margin-left: 30px;
+			transition: var(--transitionDefault);
+
+		}
+
+	}
+
+	&__body {
+
+		overflow: hidden;
+		position: relative;
+		max-height: 0;
+		opacity: 0;
+		transition: max-height var(--transitionDefault), opacity var(--transitionDefault);
+
+	}
+
+	&__inner {
+
+		padding: 0 var(--indent) 48px;
+		max-width: 1024px;
+
+	}
+
+	&__item--open &__body {
+
+		overflow: visible;
+		max-height: 3000px;
+		opacity: 1;
+
+	}
+
+	&__item--open &__head {
+
+		padding-bottom: 20px;
+
+		&::after {
+
+			transform: rotate(45deg);
+
+		}
+
+	}
+
+}
