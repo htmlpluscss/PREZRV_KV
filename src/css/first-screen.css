@@ -20,13 +20,9 @@
 
 	}
 
-	&__description {
+	&__intro {
 
 		margin: 29px 0 44px;
-		font-weight: 600;
-		font-size: 20px;
-		line-height: 26px;
-		color: var(--green);
 
 	}
 
