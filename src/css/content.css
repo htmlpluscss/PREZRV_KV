@@ -55,3 +55,16 @@
 	line-height: 52px;
 
 }
+
+.section-circle {
+
+	position: absolute;
+	top: 82px;
+	left: 50%;
+	right: var(--indent);
+	display: flex;
+	justify-content: flex-end;
+	pointer-events: none;
+	z-index: 1;
+
+}

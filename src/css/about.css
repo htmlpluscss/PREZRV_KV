@@ -1,0 +1,65 @@
+.about {
+
+	position: relative;
+	padding: 244px 0 176px;
+
+	&__column {
+
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	&__item {
+
+		width: 454px;
+		position: relative;
+		margin-left: 62px;
+
+		&::before {
+
+			position: absolute;
+			width: 705px;
+			height: 705px;
+			top: -208px;
+			left: -154px;
+			content: '';
+			border-radius: 50%;
+			background-color: #fff;
+
+		}
+
+		&--left {
+
+			margin-top: 135px;
+
+		}
+
+		&--right {
+
+			margin-top: 14px;
+			margin-right: 26px;
+
+			&::before {
+
+				left: -132px;
+
+			}
+
+		}
+
+		&-inner {
+
+			position: relative;
+
+		}
+
+	}
+
+	.h3 {
+
+		margin-bottom: 28px;
+
+	}
+
+}
