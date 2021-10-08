@@ -56,6 +56,14 @@
 
 }
 
+.caption {
+
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: 600;
+
+}
+
 .section-circle {
 
 	position: absolute;

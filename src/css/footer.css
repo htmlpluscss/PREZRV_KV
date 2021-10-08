@@ -25,7 +25,7 @@
 
 			&:hover {
 
-				--color: var(--green);
+				--color: var(--pink);
 
 			}
 
@@ -59,6 +59,16 @@
 		font-weight: 600;
 		font-size: 18px;
 		--color: var(--green);
+
+		@media ($desktop) {
+
+			&:hover {
+
+				--color: var(--pink);
+
+			}
+
+		}
 
 	}
 

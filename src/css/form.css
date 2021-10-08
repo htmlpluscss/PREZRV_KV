@@ -124,16 +124,22 @@ legend {
 	height: 66px;
 	border: 3px solid var(--color);
 	border-radius: 33px;
-	color: #4b4e4f;
+	color: var(--color);
 
 	@media ($desktop) {
 
+		&:hover:not(:focus) {
+
+			border-color: var(--green);
+
+		}
 
 	}
 
 	&::placeholder {
 
 		opacity: .5;
+		color: #4b4e4f;
 
 	}
 
@@ -156,7 +162,7 @@ legend {
 
 		&::placeholder {
 
-			opacity: 1;
+			opacity: 0;
 
 		}
 
@@ -182,7 +188,7 @@ legend {
 
 	&:valid {
 
-		border-color: var(--green);
+		/* --color: var(--green); */
 
 	}
 

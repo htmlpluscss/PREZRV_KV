@@ -1,6 +1,6 @@
 .first-screen {
 
-	padding: 158px 0;
+	padding: 122px 0;
 	/* min-height: 100vh; */
 	height: 900px;
 	position: relative;
@@ -11,6 +11,13 @@
 	background-image: url(/img/first-screen/bg.png);
 	background-position: top;
 	background-repeat: no-repeat;
+	background-size: 1440px 100%;
+
+	@media ($lgWidth) {
+
+		background-size: cover;
+
+	}
 
 	&__bg {
 
@@ -20,6 +27,15 @@
 		right: 0;
 		bottom: 0;
 		pointer-events: none;
+
+	}
+
+	&__wrap {
+
+		/* background-color: var(--bg); */
+		outline:1px solid red;
+		max-width: 968px;
+		padding: 36px 0;
 
 	}
 

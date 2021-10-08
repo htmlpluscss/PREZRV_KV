@@ -25,7 +25,12 @@
 
 			const item = btn.closest('.accordion__item'),
 				  head = item.querySelector('.accordion__head'),
-				  body = item.querySelector('.accordion__body');
+				  body = item.querySelector('.accordion__body'),
+				  arrow = document.createElement('span');
+
+			arrow.className = 'accordion__arrow';
+			arrow.innerHTML = '<svg width="56" height="56" viewBox="0 0 56 56"><path d="M0 28H56"/><path d="M28 0L28 56"/></svg>';
+			head.appendChild(arrow);
 
 			btn.addEventListener('click', () => {
 

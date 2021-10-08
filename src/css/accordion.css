@@ -18,7 +18,7 @@
 
 			&:hover {
 
-				color: var(--green);
+				--color: var(--green);
 
 			}
 
@@ -30,20 +30,19 @@
 
 		padding: 30px var(--indent);
 		display: flex;
+		color: var(--color);
 		align-items: center;
-		transition: padding var(--transitionDefault);
+		transition: var(--transitionDefault);
 		justify-content: space-between;
 
-		&::after {
+	}
 
-			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='57' height='57' fill='none' viewBox='0 0 57 57'%3E%3Cpath stroke='%23313137' stroke-width='3' d='M.5 28.18h56M28.5.18v56'/%3E%3C/svg%3E");
-			width: 57px;
-			height: 57px;
-			content: '';
-			margin-left: 30px;
-			transition: var(--transitionDefault);
+	&__arrow {
 
-		}
+		stroke: var(--color);
+		stroke-width: 3px;
+		margin-left: 30px;
+		transition: var(--transitionDefault);
 
 	}
 
@@ -76,11 +75,11 @@
 
 		padding-bottom: 20px;
 
-		&::after {
+	}
 
-			transform: rotate(45deg);
+	&__item--open &__arrow {
 
-		}
+		transform: rotate(45deg);
 
 	}
 
