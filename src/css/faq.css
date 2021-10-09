@@ -2,7 +2,15 @@
 
 	padding: 189px 0 141px;
 	position: relative;
-	background: rgba(233, 240, 245, 0.96);
+	background-image: url(/img/bg-blue.png);
+	background-position: top;
+	background-color: rgba(233, 240, 245, 0.96);
+
+	.section-circle {
+
+		top: 98px;
+
+	}
 
 	&__title {
 

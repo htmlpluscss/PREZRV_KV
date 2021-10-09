@@ -13,6 +13,12 @@ html {
 	flex-direction: column;
 	scroll-behavior: smooth;
 
+	&.scroll-behavior-off {
+
+		scroll-behavior: auto;
+
+	}
+
 }
 
 body {

@@ -1,12 +1,33 @@
 .mobile-app {
 
-	padding: 94px 0 80px;
-	outline:1px solid red;
 	position: relative;
+	background-image: url(/img/bg-green.png);
+	background-position: top;
 
-	.h2 {
+	&__figure {
+
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		flex-direction: row-reverse;
+
+		img {
+
+			width: 518px;
+			height: 375px;
+			object-fit: cover;
+			object-position: top;
+
+		}
+
+	}
+
+	&__figcaption {
 
 		padding-left: calc( var(--indent) * 1.5 );
+		margin-top: 14px;
+		margin-right: var(--indent);
+		width: var(--column);
 
 	}
 

@@ -4,6 +4,23 @@
 	padding: 180px 0 146px;
 	position: relative;
 
+	background-image: url(/img/nfts/bg.png);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 1440px 100%;
+
+	.section-circle {
+
+		top: 98px;
+
+	}
+
+	@media ($lgWidth) {
+
+		background-size: cover;
+
+	}
+
 	&__title {
 
 		margin-bottom: 42px;
@@ -18,7 +35,7 @@
 		&--between {
 
 			justify-content: space-between;
-			margin: 58px 0 74px 0;
+			margin: 86px 0 104px 0;
 
 		}
 
@@ -33,26 +50,78 @@
 	&__item {
 
 		width: var(--column);
+		position: relative;
+
+		&::before {
+
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: -20px;
+			content: '';
+			filter: blur(56px);
+			background-color: var(--bg);
+
+		}
+
+		&--1 {
+
+			&::before {
+
+				top: 42px;
+				bottom: -42px;
+
+			}
+
+		}
+
+		&--2 {
+
+			margin-top: 71px;
+
+			&::before {
+
+				top: 22px;
+
+			}
+
+		}
+
+		&--3 {
+
+			&::before {
+
+				bottom: -31px;
+
+			}
+
+		}
+
+		&--4 {
+
+			&::before {
+
+				top: 8px;
+
+			}
+
+		}
 
 	}
 
 	&__img {
 
 		display: flex;
-		align-items: flex-end;
 		justify-content: center;
-
-	}
-
-	&__row--between &__img {
-
-		height: 276px;
+		position: relative;
 
 	}
 
 	&__text {
 
-		margin: 28px 0;
+		margin-top: 28px;
+		position: relative;
 
 		.h5 {
 

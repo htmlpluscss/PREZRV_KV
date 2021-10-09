@@ -3,23 +3,9 @@
 	position: relative;
 	padding: 244px 0 210px;
 
-	&__bg {
+	.section-bg {
 
-		position: absolute;
-		top: 140px;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		overflow: hidden;
-		display: flex;
-		justify-content: center;
-		pointer-events: none;`1A2
-
-		img {
-
-			flex-shrink: 0;
-
-		}
+		top: 125px;
 
 	}
 

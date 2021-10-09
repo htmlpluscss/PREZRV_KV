@@ -2,6 +2,22 @@
 
 	padding: 168px 0 151px;
 	position: relative;
+	background-image: url(/img/bg-blue.png);
+	background-position: top;
+	background-color: rgba(233, 240, 245, 0.96);
+
+	.section-circle {
+
+		top: 98px;
+
+	}
+
+	.section-bg {
+
+		top: 98px;
+		left: -20px;
+
+	}
 
 	&__title {
 
@@ -56,6 +72,7 @@
 		padding: 128px 26px 40px 64px;
 		min-height: 360px;
 		display: flex;
+		background-color: #fff;
 		align-items: center;
 		position: relative;
 

@@ -3,13 +3,23 @@
 	position: relative;
 	flex-shrink: 0;
 	padding: 149px 0 46px;
+	background-image: url(/img/footer/bg.png);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 1440px 100%;
+
+	@media ($lgWidth) {
+
+		background-size: cover;
+
+	}
 
 	&__up {
 
 		position: absolute;
 		width: 64px;
 		height: 64px;
-		right: 160px;
+		right: 100px;
 		bottom: 325px;
 		border-radius: 50%;
 		background-color: var(--color);
@@ -95,7 +105,8 @@
 					margin: 0 40px 0 0;
 					top: 10px;
 
-					img {
+					img,
+					svg {
 
 						width: 161px;
 						height: 47px;

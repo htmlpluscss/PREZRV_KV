@@ -18,6 +18,9 @@
 		document.body.classList.remove('modal-show');
 		wrapper.style.top = 0;
 		window.scrollTo(0,windowScroll);
+
+		setTimeout( () => document.documentElement.classList.remove('scroll-behavior-off'));
+
 		activeModal = false;
 
 	});
@@ -44,13 +47,17 @@
 
 		Array.from(items, el => el.classList.toggle('visuallyhidden', el !== activeModal));
 
-		wrapper.style.top = -windowScroll + 'px';
-		document.body.classList.add('modal-show');
-		window.scrollTo(0,0);
+		document.documentElement.classList.add('scroll-behavior-off');
 
-		activeModal.focus();
+		setTimeout( () => {
 
-		PubSub.publish('open-' + selector);
+			wrapper.style.top = -windowScroll + 'px';
+			document.body.classList.add('modal-show');
+			window.scrollTo(0,0);
+
+			activeModal.focus();
+
+		});
 
 	};
 

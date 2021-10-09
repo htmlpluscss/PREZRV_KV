@@ -69,11 +69,32 @@
 	position: absolute;
 	top: 82px;
 	left: 50%;
+	max-width: calc(1440px / 2);
 	right: var(--indent);
 	display: flex;
 	justify-content: flex-end;
 	pointer-events: none;
 	z-index: 1;
+
+}
+
+.section-bg {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	pointer-events: none;
+
+	img {
+
+		flex-shrink: 0;
+
+	}
 
 }
 

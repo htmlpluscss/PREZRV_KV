@@ -4,6 +4,29 @@
 	position: relative;
 	text-align: center;
 
+	background-image: url(/img/bg-blue.png);
+	background-position: top;
+	background-color: rgba(233, 240, 245, 0.96);
+
+	.section-circle {
+
+		top: 98px;
+
+	}
+
+	.section-bg--tree {
+
+		img {
+
+			flex-shrink: 0;
+			min-height: 100%;
+			left: -624px;
+
+		}
+
+	}
+
+
 	&__title {
 
 		margin: 0 auto 145px;
@@ -31,6 +54,7 @@
 	&__item {
 
 		width: calc( (100% - 120px) / 3 );
+		position: relative;
 
 		.h4 {
 
@@ -47,6 +71,14 @@
 			position: relative;
 			background-color: #fff;
 			margin-bottom: 8px;
+
+			img {
+
+				position: absolute;
+				top: -85px;
+				right: 18px;
+
+			}
 
 		}
 
