@@ -2,16 +2,9 @@
 
 	padding: 171px 0 44px;
 	position: relative;
-	background-image: url(/img/roadmap/bg.png);
-	background-position: top;
+	background-image: url(/img/topography.svg);
 	background-repeat: no-repeat;
-	background-size: 1440px 100%;
-
-	@media ($lgWidth) {
-
-		background-size: cover;
-
-	}
+	background-size: 100% 100%;
 
 	.section-bg {
 

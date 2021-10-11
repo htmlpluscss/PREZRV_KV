@@ -3,16 +3,10 @@
 	position: relative;
 	flex-shrink: 0;
 	padding: 149px 0 46px;
-	background-image: url(/img/footer/bg.png);
+	background-image: url(/img/topography.svg);
 	background-position: top;
 	background-repeat: no-repeat;
-	background-size: 1440px 100%;
-
-	@media ($lgWidth) {
-
-		background-size: cover;
-
-	}
+	background-size: 100% 100%;
 
 	&__up {
 
