@@ -18,6 +18,12 @@
 			object-fit: cover;
 			object-position: top;
 
+			@media ($mdWidth) {
+
+				width: 200px;
+
+			}
+
 		}
 
 	}

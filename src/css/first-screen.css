@@ -1,13 +1,20 @@
 .first-screen {
 
 	padding: 122px 0;
-	min-height: 100vh;
-	/* height: 900px; */
+	/* min-height: 100vh; */
+	height: 900px;
+	height: 1048px;
 	position: relative;
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	@media ($mdWidth) {
+
+		padding: 200px 0 256px;
+
+	}
 
 	&::before {
 
@@ -29,6 +36,16 @@
 
 	}
 
+	.center {
+
+		@media ($mdWidth) {
+
+			padding: 0;
+
+		}
+
+	}
+
 	&__wrap {
 
 		max-width: 968px;
@@ -45,7 +62,7 @@
 			bottom: 0;
 			content: '';
 			filter: blur(68px);
-			background-color: var(--bg);
+			/* background-color: var(--bg); */
 
 		}
 
@@ -63,6 +80,12 @@
 		margin: 29px 0 44px;
 		position: relative;
 		z-index: 1;
+
+		@media ($mdWidth) {
+
+			margin: 30px 0 48px;
+
+		}
 
 	}
 

@@ -5,6 +5,12 @@
 	background-image: url(/img/bg-green.png);
 	background-position: top;
 
+	@media ($mdWidth) {
+
+		padding: 66px 0;
+
+	}
+
 	.section-bg {
 
 		img {
@@ -19,6 +25,12 @@
 	.h4 {
 
 		padding-left: calc( var(--indent) * 1.5 );
+
+		@media ($mdWidth) {
+
+			padding-left: 152px;
+
+		}
 
 	}
 

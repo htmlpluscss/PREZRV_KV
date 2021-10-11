@@ -56,6 +56,12 @@
 		width: calc( (100% - 120px) / 3 );
 		position: relative;
 
+		@media ($mdWidth) {
+
+			width: 252px;
+
+		}
+
 		.h4 {
 
 			margin: 16px 0 10px;

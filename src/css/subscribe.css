@@ -14,12 +14,24 @@
 		text-align: center;
 		margin: 45px auto 66px;
 
+		@media ($mdWidth) {
+
+			display: none;
+
+		}
+
 	}
 
 	&__fieldset {
 
 		width: 702px;
 		margin: auto;
+
+		@media ($mdWidth) {
+
+			width: 100%;
+
+		}
 
 	}
 

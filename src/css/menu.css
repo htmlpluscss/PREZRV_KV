@@ -4,6 +4,12 @@
 	align-items: flex-end;
 	column-gap: 40px;
 
+	@media ($mdWidth) {
+
+		column-gap: 34px;
+
+	}
+
 	&__item {
 
 		@media ($desktop) {
@@ -19,6 +25,19 @@
 		&--logo {
 
 			margin: 0 26px;
+
+			@media ($mdWidth) {
+
+				margin: 0 auto 6px;
+
+				svg {
+
+					width: 136px;
+					height: 39px;
+
+				}
+
+			}
 
 		}
 

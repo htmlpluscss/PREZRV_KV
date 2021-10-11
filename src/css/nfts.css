@@ -8,9 +8,21 @@
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 
+	@media ($mdWidth) {
+
+		padding: 164px 0;
+
+	}
+
 	.section-circle {
 
 		top: 98px;
+
+		@media ($mdWidth) {
+
+			top: 63px;
+
+		}
 
 	}
 
@@ -118,7 +130,7 @@
 
 		.h5 {
 
-			margin: 13px 0;
+			margin: 20px 0;
 
 		}
 

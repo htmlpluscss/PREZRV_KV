@@ -34,8 +34,13 @@
 	&__item {
 
 		margin-top: 40px;
-		display: flex;
-		height: 104px;
+
+		@media ($desktop) {
+
+			display: flex;
+			height: 104px;
+
+		}
 
 	}
 
@@ -72,6 +77,12 @@
 		align-items: center;
 		justify-content: center;
 
+		@media ($mdWidth) {
+
+			width: 160px;
+
+		}
+
 		span {
 
 			min-width: 160px;
@@ -82,6 +93,13 @@
 
 			display: flex;
 			column-gap: 29px;
+
+			@media ($mdWidth) {
+
+				column-gap: auto;
+				justify-content: space-between;
+
+			}
 
 		}
 

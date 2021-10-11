@@ -26,6 +26,13 @@
 
 @media ($mdWidth) {
 
+	:root {
+
+		--indent: 50px;
+		--column: 334px;
+
+	}
+
 	.hidden-md {
 
 		display: none !important;
@@ -40,7 +47,8 @@
 
 	.center {
 
-		width: 750px;
+		width: 768px;
+		padding: 0 var(--indent);
 
 	}
 

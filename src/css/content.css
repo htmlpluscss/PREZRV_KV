@@ -22,6 +22,13 @@
 	font-size: 72px;
 	line-height: 78px;
 
+	@media ($mdWidth) {
+
+		font-size: 54px;
+		line-height: 62px;
+
+	}
+
 }
 
 .h2 {
@@ -29,6 +36,13 @@
 	font-weight: 500;
 	font-size: 64px;
 	line-height: 73px;
+
+	@media ($mdWidth) {
+
+		font-size: 46px;
+		line-height: 52px;
+
+	}
 
 }
 
@@ -38,6 +52,13 @@
 	font-size: 54px;
 	line-height: 62px;
 
+	@media ($mdWidth) {
+
+		font-size: 36px;
+		line-height: 42px;
+
+	}
+
 }
 
 .h4 {
@@ -46,13 +67,20 @@
 	font-size: 46px;
 	line-height: 52px;
 
+	@media ($mdWidth) {
+
+		font-size: 36px;
+		line-height: 42px;
+
+	}
+
 }
 
 .h5 {
 
 	font-weight: 600;
 	font-size: 32px;
-	line-height: 52px;
+	line-height: 40px;
 
 }
 
@@ -61,6 +89,13 @@
 	font-size: 20px;
 	line-height: 26px;
 	font-weight: 600;
+
+	@media ($mdWidth) {
+
+		font-size: 18px;
+		line-height: 24px;
+
+	}
 
 }
 
@@ -75,6 +110,19 @@
 	justify-content: flex-end;
 	pointer-events: none;
 	z-index: 1;
+
+	@media ($mdWidth) {
+
+		top: 12px;
+
+		img {
+
+			width: 100px;
+			height: 100px;
+
+		}
+
+	}
 
 }
 
@@ -105,5 +153,12 @@
 	line-height: 26px;
 	text-align: center;
 	color: var(--green);
+
+	@media ($mdWidth) {
+
+		font-size: 18px;
+		line-height: 24px;
+
+	}
 
 }

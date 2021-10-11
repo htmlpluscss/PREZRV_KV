@@ -7,10 +7,20 @@
 	right: 0;
 	z-index: 9;
 
+	@media ($mdWidth) {
+
+		top: 50px;
+
+	}
+
 	&__menu {
 
-		display: flex;
-		justify-content: center;
+		@media ($desktop) {
+
+			display: flex;
+			justify-content: center;
+
+		}
 
 	}
 
