@@ -35,14 +35,38 @@
 		transition: var(--transitionDefault);
 		justify-content: space-between;
 
+		@media ($mdWidth) {
+
+			font-size: 30px;
+			padding: 36px 30px;
+
+		}
+
 	}
 
 	&__arrow {
 
 		stroke: var(--color);
 		stroke-width: 3px;
-		margin-left: 30px;
+		margin-left: 20px;
 		transition: var(--transitionDefault);
+
+		@media ($mdWidth) {
+
+			width: 40px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden;
+
+			svg {
+
+				flex-shrink: 0;
+
+			}
+
+		}
 
 	}
 
@@ -60,6 +84,12 @@
 
 		padding: 0 var(--indent) 48px;
 		max-width: 1024px;
+
+		@media ($mdWidth) {
+
+			padding: 8px 30px 52px;
+
+		}
 
 	}
 

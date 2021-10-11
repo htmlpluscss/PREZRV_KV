@@ -5,7 +5,13 @@
 
 	@media ($mdWidth) {
 
-		padding: 200px 0 128px;
+		padding: 150px 0 128px;
+
+		.section-bg {
+
+			top: -50px;
+
+		}
 
 	}
 
@@ -70,13 +76,11 @@
 
 			margin: 0;
 			width: auto;
-			outline:1px solid red;
 
 			img {
 
-				width: 284px;
-				height: 225px;
-				object-fit: contain;
+				width: auto;
+				height: auto;
 
 			}
 

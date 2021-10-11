@@ -12,25 +12,6 @@
 
 	}
 
-	.section-circle {
-
-		top: 98px;
-
-		@media ($mdWidth) {
-
-			top: 43px;
-
-		}
-
-	}
-
-	.section-bg {
-
-		top: 98px;
-		left: -20px;
-
-	}
-
 	&__title {
 
 		margin: auto;
@@ -82,7 +63,7 @@
 			top: 0;
 			left: 0;
 			right: 0;
-			bottom: 18px;
+			bottom: 0;
 			content: '';
 			background-position: center;
 			background-repeat: no-repeat;
@@ -91,7 +72,7 @@
 			@media ($mdWidth) {
 
 				background-size: 104px 104px;
-				bottom: 4px;
+				bottom: 52px;
 
 			}
 
@@ -119,7 +100,7 @@
 		@media ($mdWidth) {
 
 			width: 314px;
-			padding: 170px 35px 32px;
+			padding: 144px 35px 32px;
 
 			br {
 

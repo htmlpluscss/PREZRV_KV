@@ -6,13 +6,25 @@
 
 	@media ($mdWidth) {
 
-		padding: 0 0 50px;
+		padding: 24px 0 100px;
+
+	}
+
+	.section-circle {
+
+		top: 34px;
 
 	}
 
 	.section-bg {
 
 		top: 125px;
+
+		@media ($mdWidth) {
+
+			top: 303px;
+
+		}
 
 	}
 

@@ -38,7 +38,7 @@ body {
 	position: relative;
 	background-color: var(--bg);
 /* background-image: url(/css/2.png); */
-background-position: center 0;
+background-position: bottom;
 
 	@media ($mdWidth) {
 

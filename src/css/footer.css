@@ -2,19 +2,25 @@
 
 	position: relative;
 	flex-shrink: 0;
-	padding: 149px 0 46px;
+	padding: 149px 0 48px;
 	background-image: url(/img/topography.svg);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+
+	@media ($mdWidth) {
+
+		padding: 118px 0 66px;
+
+	}
 
 	&__up {
 
 		position: absolute;
 		width: 64px;
 		height: 64px;
-		right: 100px;
-		bottom: 325px;
+		right: 0;
+		bottom: 120px;
 		border-radius: 50%;
 		background-color: var(--color);
 		z-index: 1;
@@ -35,12 +41,12 @@
 
 		}
 
-	}
+		@media ($mdWidth) {
 
-	.center {
+			bottom: 100%;
+			right: var(--indent);
 
-		width: 1440px;
-		padding: 0 var(--indent);
+		}
 
 	}
 
@@ -48,17 +54,29 @@
 
 		margin-bottom: 150px;
 
+		@media ($mdWidth) {
+
+			margin-bottom: 198px;
+
+		}
+
 	}
 
 	&__bottom {
 
-		display: flex;
-		align-items: baseline;
-		justify-content: space-between;
+		.center {
 
-		@media ($mdWidth) {
+			width: 1440px;
+			padding: 0 var(--indent);
+			display: flex;
+			align-items: baseline;
+			justify-content: space-between;
 
-			flex-wrap: wrap;
+			@media ($mdWidth) {
+
+				flex-wrap: wrap;
+
+			}
 
 		}
 
@@ -80,6 +98,13 @@
 
 		}
 
+		@media ($mdWidth) {
+
+			margin-top: auto;
+			margin-bottom: 4px;
+
+		}
+
 	}
 
 	&__copyright {
@@ -88,9 +113,18 @@
 		color: rgba(49, 49, 55, 0.3);
 		white-space: nowrap;
 
+		@media ($mdWidth) {
+
+			width: 50%;
+			text-align: right;
+
+		}
+
 	}
 
 	&__menu {
+
+		position: relative;
 
 		.menu {
 
@@ -107,22 +141,39 @@
 
 				&--logo {
 
-					order: -1;
-					margin: 0 40px 0 0;
-					top: 10px;
-
 					img,
 					svg {
 
 						width: 161px;
 						height: 47px;
+						top: 8px;
+
+					}
+
+					@media ($lgWidth) {
+
+						position: static;
+						width: 200px;
+						margin: 0;
+						order: -1;
+
+					}
+
+					@media ($desktop) {
+
+						position: absolute;
+						left: 0;
+						bottom: 100%;
+						margin: 0 0 30px;
 
 					}
 
 					@media ($mdWidth) {
 
-						margin: 0 0 20px;
-						width: 100%;
+						position: absolute;
+						left: 0;
+						bottom: 100%;
+						margin: 0 0 45px;
 
 					}
 
@@ -144,6 +195,14 @@
 
 		position: relative;
 		top: 6px;
+
+		@media ($mdWidth) {
+
+			width: 50%;
+			top: 10px;
+			margin-top: 30px;
+
+		}
 
 		.social {
 

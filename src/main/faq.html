@@ -3,7 +3,20 @@
 
 	<div class="section-bg">
 
-		<img src="/img/faq/img.png" srcset="/img/faq/img@2x.png 2x" width="1600" height="1489" loading="eager" alt="">
+		<picture>
+
+			<!-- <source srcset="/img/faq/img--mobile.webp" type="image/webp" media="(max-width: 767px)"> -->
+			<source srcset="/img/faq/img--mobile.png" media="(max-width: 767px)">
+
+			<!-- <source srcset="/img/faq/img--tablet.webp" type="image/webp" media="(max-width: 1199px)"> -->
+			<source srcset="/img/faq/img--tablet.png" media="(max-width: 1199px)">
+
+			<!-- <source srcset="/img/faq/img.webp 1x, /img/faq/img@2x.webp 2x" type="image/webp"> -->
+			<source srcset="/img/faq/img.png 1x, /img/faq/img@2x.png 2x">
+
+			<img src="/img/faq/img.png" srcset="/img/faq/img@2x.png 2x" width="1600" height="1489" loading="eager" alt="">
+
+		</picture>
 
 	</div>
 

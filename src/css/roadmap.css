@@ -6,15 +6,21 @@
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 
-	.section-bg {
+	@media ($mdWidth) {
 
-		left: 160px;
+		padding: 162px 0 24px;
 
-	}
+		.section-circle {
 
-	.section-circle {
+			top: 76px;
 
-		top: 98px;
+		}
+
+		.section-bg img {
+
+			width: 968px;
+
+		}
 
 	}
 
@@ -22,6 +28,12 @@
 
 		text-align: center;
 		margin-bottom: 62px;
+
+		@media ($mdWidth) {
+
+			margin-bottom: 20px;
+
+		}
 
 	}
 
@@ -33,12 +45,17 @@
 
 	&__item {
 
-		margin-top: 40px;
-
 		@media ($desktop) {
 
 			display: flex;
 			height: 104px;
+			margin-top: 40px;
+
+		}
+
+		@media ($mdWidth) {
+
+			margin-bottom: 42px;
 
 		}
 
@@ -50,6 +67,22 @@
 		color: var(--green);
 		flex-shrink: 0;
 
+		@media ($mdWidth) {
+
+			width: auto;
+			display: flex;
+			align-items: flex-end;
+			margin-bottom: 10px;
+
+			.h2 {
+
+				font-size: 64px;
+				line-height: 73px;
+
+			}
+
+		}
+
 	}
 
 	&__year {
@@ -57,6 +90,12 @@
 		margin-top: 8px;
 		display: block;
 		color: var(--pink);
+
+		@media ($mdWidth) {
+
+			margin: 0 14px 10px;
+
+		}
 
 	}
 
@@ -81,6 +120,13 @@
 
 			width: 160px;
 
+			.caption {
+
+				font-size: 16px;
+				min-width: 140px;
+
+			}
+
 		}
 
 		span {
@@ -96,7 +142,7 @@
 
 			@media ($mdWidth) {
 
-				column-gap: auto;
+				column-gap: 10px;
 				justify-content: space-between;
 
 			}

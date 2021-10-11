@@ -1,9 +1,9 @@
 .first-screen {
 
 	padding: 122px 0;
-	/* min-height: 100vh; */
-	height: 900px;
-	height: 1048px;
+	min-height: 100vh;
+	/* height: 900px; */
+	/* height: 1024px; */
 	position: relative;
 	text-align: center;
 	display: flex;
@@ -12,7 +12,7 @@
 
 	@media ($mdWidth) {
 
-		padding: 200px 0 256px;
+		padding: 224px 0 256px;
 
 	}
 
@@ -28,11 +28,26 @@
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 
+		@media ($mdWidth) {
+
+			bottom: -230px;
+			background-size: 1200px 100%;
+
+		}
+
 	}
 
 	.section-bg {
 
-		top: 3px;
+		img {
+
+			@media ($mdWidth) {
+
+				width: 968px;
+
+			}
+
+		}
 
 	}
 
@@ -107,6 +122,12 @@
 		left: 0;
 		right: 0;
 		bottom: 72px;
+
+		@media ($mdWidth) {
+
+			bottom: 48px;
+
+		}
 
 	}
 

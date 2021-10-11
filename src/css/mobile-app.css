@@ -20,7 +20,8 @@
 
 			@media ($mdWidth) {
 
-				width: 200px;
+				width: 400px;
+				height: auto;
 
 			}
 
@@ -34,6 +35,13 @@
 		margin-top: 14px;
 		margin-right: var(--indent);
 		width: var(--column);
+
+		@media ($mdWidth) {
+
+			padding: 0;
+			margin: 0;
+
+		}
 
 	}
 

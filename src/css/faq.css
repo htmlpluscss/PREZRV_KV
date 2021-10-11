@@ -6,9 +6,15 @@
 	background-position: top;
 	background-color: rgba(233, 240, 245, 0.96);
 
-	.section-circle {
+	@media ($mdWidth) {
 
-		top: 98px;
+		padding: 143px 0 118px;
+
+		.section-circle {
+
+			top: 70px;
+
+		}
 
 	}
 

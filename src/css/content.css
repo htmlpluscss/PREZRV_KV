@@ -26,6 +26,7 @@
 
 		font-size: 54px;
 		line-height: 62px;
+		font-weight: 500;
 
 	}
 
@@ -102,7 +103,7 @@
 .section-circle {
 
 	position: absolute;
-	top: 82px;
+	top: 98px;
 	left: 50%;
 	max-width: calc(1440px / 2);
 	right: var(--indent);
@@ -113,7 +114,7 @@
 
 	@media ($mdWidth) {
 
-		top: 12px;
+		top: 43px;
 
 		img {
 
@@ -141,6 +142,13 @@
 	img {
 
 		flex-shrink: 0;
+
+		@media ($mdWidth) {
+
+			width: 768px;
+			height: auto;
+
+		}
 
 	}
 
