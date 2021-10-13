@@ -9,12 +9,6 @@
 	justify-content: center;
 	padding: var(--indent);
 
-	@media ($smWidth) {
-
-
-
-	}
-
 	&__box {
 
 		position: relative;
@@ -30,6 +24,13 @@
 		border-radius: 8px;
 		width: 630px;
 
+		@media ($smWidth) {
+
+			max-width: 100%;
+			padding: 45px 34px 50px;
+
+		}
+
 	}
 
 	&__close-btn {
@@ -41,6 +42,26 @@
 		svg {
 
 			stroke: var(--color);
+
+		}
+
+		@media ($smWidth) {
+
+			top: 22px;
+			right: 14px;
+
+			svg {
+
+				width: 34px;
+				height: 34px;
+
+				path {
+
+					stroke-width: 5px;
+
+				}
+
+			}
 
 		}
 
@@ -68,6 +89,23 @@
 
 		}
 
+		@media ($smWidth) {
+
+			font-size: 14px;
+			line-height: 20px;
+			padding: 0;
+
+			svg {
+
+				position: static;
+				width: 100px;
+				height: 100px;
+				margin-bottom: 31px;
+
+			}
+
+		}
+
 		svg {
 
 			position: absolute;
@@ -91,6 +129,14 @@
 
 				font-size: 46px;
 				line-height: 52px;
+
+			}
+
+			@media ($smWidth) {
+
+				font-size: 24px;
+				line-height: 28px;
+				margin-bottom: 16px;
 
 			}
 

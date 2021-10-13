@@ -3,6 +3,7 @@
 	position: relative;
 	background-image: url(/img/bg-green.png);
 	background-position: top;
+	overflow: hidden;
 
 	&__figure {
 
@@ -25,11 +26,21 @@
 
 			}
 
+			@media ($smWidth) {
+
+				width: 350px;
+				left: 14px;
+
+			}
+
 		}
 
 		@media ($smWidth) {
 
 			flex-direction: column-reverse;
+			align-items: flex-start;
+			justify-content: flex-start;
+			padding-top: 38px;
 
 		}
 
@@ -49,6 +60,12 @@
 
 		}
 
+		@media ($smWidth) {
+
+			padding-left: 12px;
+
+		}
+
 	}
 
 	small {
@@ -58,6 +75,14 @@
 		font-size: 22px;
 		line-height: 32px;
 		margin-top: 24px;
+
+		@media ($smWidth) {
+
+			font-size: 14px;
+			line-height: 18px;
+			margin-top: 20px;
+
+		}
 
 	}
 

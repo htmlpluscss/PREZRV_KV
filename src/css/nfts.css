@@ -26,11 +26,35 @@
 
 	}
 
+	@media ($smWidth) {
+
+		padding: 100px 0 64px;
+
+		.section-circle {
+
+			top: 30px;
+
+		}
+
+		.section-bg img {
+
+			width: 320px;
+
+		}
+
+	}
+
 	&__title {
 
 		margin-bottom: 42px;
 		position: relative;
 		z-index: 1;
+
+		@media ($smWidth) {
+
+			margin-bottom: 30px;
+
+		}
 
 	}
 
@@ -62,6 +86,12 @@
 
 			}
 
+			@media ($smWidth) {
+
+				margin: 0;
+
+			}
+
 		}
 
 		&--right {
@@ -76,6 +106,12 @@
 
 		width: var(--column);
 		position: relative;
+
+		@media ($smWidth) {
+
+			width: 100%;
+
+		}
 
 		&::before {
 
@@ -94,6 +130,12 @@
 				left: calc( var(--indent) * -1 );
 				right: calc( var(--indent) * -1 );
 				bottom: calc( var(--indent) * -1 );
+
+			}
+
+			@media ($smWidth) {
+
+				display: none;
 
 			}
 
@@ -145,6 +187,12 @@
 
 			}
 
+			@media ($smWidth) {
+
+				margin-top: 64px;
+
+			}
+
 		}
 
 		&--3 {
@@ -164,6 +212,12 @@
 					width: 290px;
 
 				}
+
+			}
+
+			@media ($smWidth) {
+
+				margin-top: 64px;
 
 			}
 
@@ -189,6 +243,12 @@
 
 			}
 
+			@media ($smWidth) {
+
+				margin-top: 64px;
+
+			}
+
 		}
 
 	}
@@ -209,12 +269,28 @@
 
 		}
 
+		@media ($smWidth) {
+
+			img {
+
+				width: auto;
+
+			}
+
+		}
+
 	}
 
 	&__text {
 
 		margin-top: 28px;
 		position: relative;
+
+		@media ($smWidth) {
+
+			margin-top: 24px;
+
+		}
 
 		.h5 {
 
@@ -223,6 +299,12 @@
 			@media ($mdWidth) {
 
 				margin: 20px 0;
+
+			}
+
+			@media ($smWidth) {
+
+				margin: 10px 0;
 
 			}
 

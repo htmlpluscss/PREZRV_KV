@@ -42,6 +42,12 @@
 
 		}
 
+		@media ($smWidth) {
+
+			margin-top: 24px;
+
+		}
+
 	}
 
 	&__legend {
@@ -54,6 +60,14 @@
 
 			font-size: 20px;
 			padding-left: 20px;
+
+		}
+
+		@media ($smWidth) {
+
+			font-size: 14px;
+			padding: 0;
+			line-height: 20px;
 
 		}
 
@@ -75,6 +89,7 @@
 		@media ($smWidth) {
 
 			display: block;
+			margin-top: 10px;
 
 		}
 

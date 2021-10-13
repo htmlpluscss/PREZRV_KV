@@ -37,8 +37,8 @@ body {
 	overflow-y: scroll;
 	position: relative;
 	background-color: var(--bg);
-/* background-image: url(/css/2.png); */
-background-position: bottom;
+/* background-image: url(/css/3.png); */
+/* background-position: center 31px; */
 
 	@media ($mdWidth) {
 
@@ -104,8 +104,7 @@ li {
 /*
 -----------------------------------------------------------------------------*/
 
-.wrapper,
-.main {
+.wrapper {
 
 	flex-shrink: 0;
 	flex-grow: 1;

@@ -53,11 +53,11 @@
 		text : "Neither. Our tokens are for governance, and our NFTs are for those who want to help nature while obtaining something tangible in return. NFTEIs do not convey ownership of underlying natural assets, or entitle you to tax write-offs."
 	},
 	{
-		name : "What makes this better?",
+		name : "What makes this&nbsp;better?",
 		text : "We aren’t dependant on the same institutions which caused our current environmental crisis in the first place. We aren’t reliant on grants or donations from governments or private groups which put their own interests before the greater good. Those who rely on old systems are simply not going to make it."
 	},
 	{
-		name : "Why should I trust you?",
+		name : "Why should I trust&nbsp;you?",
 		text : "Our recordbooks are both viewable at any time and updated in real time, unlike the quarterly reports of typical organizations. We also focus on tangible initatives which can be physically verified by anyone. Additionally, our team is public, and is happy to speak to anyone who contacts us. We welcome skeptisim in philantropy - its part of the reason we started this project!"
 	}
 
@@ -68,7 +68,11 @@
 			<section class="accordion__item">
 
 				<h3 class="accordion__head accordion__btn h4">
-					{{ item.name }}
+
+					<span class="accordion__head-inner">
+						{{ item.name | safe }}
+					</span>
+
 				</h3>
 
 				<div class="accordion__body">

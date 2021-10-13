@@ -8,6 +8,12 @@
 		background-color: var(--bg);
 		border-radius: 10px;
 
+		@media ($smWidth) {
+
+			margin-top: 18px;
+
+		}
+
 	}
 
 	&__btn {
@@ -52,6 +58,15 @@
 
 			}
 
+			@media ($smWidth) {
+
+				width: 24px;
+				height: 2px;
+				top: 34px;
+				right: var(--indent);
+
+			}
+
 		}
 
 		&::before {
@@ -64,6 +79,24 @@
 
 			font-size: 30px;
 			padding: 36px 80px 36px 30px;
+
+		}
+
+		@media ($smWidth) {
+
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 20px;
+			padding: var(--indent);
+			min-height: 72px;
+			display: flex;
+			align-items: center;
+
+			&-inner {
+
+				max-width: 146px;
+
+			}
 
 		}
 
@@ -90,6 +123,12 @@
 
 		}
 
+		@media ($smWidth) {
+
+			padding: 0 var(--indent) calc( var(--indent) * 2 );
+
+		}
+
 	}
 
 	&__item--open &__body {
@@ -103,6 +142,12 @@
 	&__item--open &__head {
 
 		padding-bottom: 20px;
+
+		@media ($smWidth) {
+
+			padding-bottom: var(--indent);
+
+		}
 
 		&::after {
 
