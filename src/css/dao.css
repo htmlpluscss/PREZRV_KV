@@ -64,7 +64,15 @@
 
 		@media ($mdWidth) {
 
-			padding: 0 18px;
+			display: grid;
+			gap: 80px 80px;
+			grid-template-columns: 1fr 1fr;
+
+		}
+
+		@media ($smWidth) {
+
+			display: block;
 
 		}
 
@@ -87,7 +95,7 @@
 
 	&__item {
 
-		width: calc( (100% - 120px) / 3 );
+		width: calc( (100% - 130px) / 3 );
 		position: relative;
 
 		@media ($mdWidth) {

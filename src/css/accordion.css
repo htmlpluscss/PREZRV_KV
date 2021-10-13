@@ -28,7 +28,7 @@
 
 	&__head {
 
-		padding: 30px 100px 30px var(--indent);
+		padding: 32px 132px 32px var(--indent);
 		color: var(--color);
 		position: relative;
 		transition: var(--transitionDefault);
@@ -40,7 +40,7 @@
 			width: 56px;
 			height: 3px;
 			top: 56px;
-			right: 30px;
+			right: var(--indent);
 			content: '';
 			background-color: var(--color);
 			transition: var(--transitionDefault);
@@ -48,6 +48,7 @@
 			@media ($mdWidth) {
 
 				width: 40px;
+				right: 28px;
 
 			}
 

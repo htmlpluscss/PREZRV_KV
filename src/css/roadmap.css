@@ -107,7 +107,6 @@
 
 	&__step {
 
-		width: 210px;
 		background-color: var(--pink);
 		border-radius: 10px;
 		padding: 10px;
@@ -118,20 +117,12 @@
 
 		@media ($mdWidth) {
 
-			width: 160px;
-
 			.caption {
 
 				font-size: 16px;
 				min-width: 140px;
 
 			}
-
-		}
-
-		@media ($smWidth) {
-
-			width: calc(50% - 6px);
 
 		}
 
@@ -143,21 +134,21 @@
 
 		&s {
 
-			display: flex;
-			column-gap: 29px;
+			display: grid;
+			gap: 29px;
+			justify-content: space-between;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
 
 			@media ($mdWidth) {
 
-				column-gap: 10px;
-				justify-content: space-between;
+				gap: 10px;
 
 			}
 
 			@media ($smWidth) {
 
-				flex-wrap: wrap;
-				row-gap: 12px;
-				column-gap: 12px;
+				grid-template-columns: 1fr 1fr;
+				gap: 12px;
 
 			}
 

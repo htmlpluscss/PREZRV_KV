@@ -51,9 +51,10 @@
 
 		@media ($mdWidth) {
 
-			column-gap: auto;
-			row-gap: 115px;
+			gap: 115px 32px;
+			display: grid;
 			justify-content: space-between;
+			grid-template-columns: 314px 314px;
 
 		}
 
@@ -105,7 +106,7 @@
 
 		@media ($mdWidth) {
 
-			width: 314px;
+			width: 100%;
 			padding: 144px 35px 32px;
 
 			br {

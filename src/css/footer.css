@@ -109,7 +109,7 @@
 
 			margin: 0;
 			position: absolute;
-			top: 0;
+			top: -56px;
 			right: 0;
 
 		}
@@ -152,16 +152,12 @@
 			column-gap: 22px;
 			align-items: baseline;
 
-			@media ($mdWidth) {
-
-				flex-wrap: wrap;
-
-			}
-
 			@media ($smWidth) {
 
 				column-gap: 0;
 				width: 100%;
+				flex-wrap: wrap;
+				display: flex;
 
 			}
 
@@ -254,7 +250,8 @@
 
 		.social {
 
-			column-gap: 26px;
+			gap: 26px;
+			justify-content: flex-start;
 
 			svg {
 

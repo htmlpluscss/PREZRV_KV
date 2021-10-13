@@ -1,7 +1,7 @@
 .nfts {
 
 	text-align: center;
-	padding: 180px 0 146px;
+	padding: 180px 0 174px;
 	position: relative;
 	background-image: url(/img/topography.svg);
 	background-position: top;
@@ -10,7 +10,7 @@
 
 	@media ($mdWidth) {
 
-		padding: 164px 0 144px;
+		padding: 164px 0 141px;
 
 		.section-bg img {
 
@@ -58,7 +58,7 @@
 
 			@media ($mdWidth) {
 
-				margin: 144px 0 81px;
+				margin: 140px 0 76px;
 
 			}
 
@@ -218,11 +218,11 @@
 
 		.h5 {
 
-			margin: 20px 0;
+			margin: 24px 0;
 
 			@media ($mdWidth) {
 
-				margin: 16px 0;
+				margin: 20px 0;
 
 			}
 
