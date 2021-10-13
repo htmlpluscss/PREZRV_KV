@@ -57,6 +57,12 @@
 
 		}
 
+		@media ($smWidth) {
+
+			display: block;
+
+		}
+
 		&::after {
 
 			position: absolute;

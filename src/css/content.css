@@ -30,6 +30,13 @@
 
 	}
 
+	@media ($smWidth) {
+
+		font-size: 28px;
+		line-height: 34px;
+
+	}
+
 }
 
 .h2 {
@@ -42,6 +49,13 @@
 
 		font-size: 46px;
 		line-height: 52px;
+
+	}
+
+	@media ($smWidth) {
+
+		font-size: 24px;
+		line-height: 28px;
 
 	}
 
@@ -60,6 +74,13 @@
 
 	}
 
+	@media ($smWidth) {
+
+		font-size: 24px;
+		line-height: 28px;
+
+	}
+
 }
 
 .h4 {
@@ -75,6 +96,13 @@
 
 	}
 
+	@media ($smWidth) {
+
+		font-size: 24px;
+		line-height: 28px;
+
+	}
+
 }
 
 .h5 {
@@ -82,6 +110,13 @@
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 40px;
+
+	@media ($smWidth) {
+
+		font-size: 24px;
+		line-height: 28px;
+
+	}
 
 }
 
@@ -125,6 +160,19 @@
 
 	}
 
+	@media ($smWidth) {
+
+		top: 28px;
+
+		img {
+
+			width: 60px;
+			height: 60px;
+
+		}
+
+	}
+
 }
 
 .section-bg {
@@ -150,6 +198,12 @@
 
 		}
 
+		@media ($smWidth) {
+
+			width: 320px;
+
+		}
+
 	}
 
 }
@@ -166,6 +220,12 @@
 
 		font-size: 18px;
 		line-height: 24px;
+
+	}
+
+	@media ($smWidth) {
+
+		font-size: 16px;
 
 	}
 

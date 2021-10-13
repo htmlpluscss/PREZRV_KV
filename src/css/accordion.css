@@ -28,43 +28,41 @@
 
 	&__head {
 
-		padding: 30px var(--indent);
-		display: flex;
+		padding: 30px 100px 30px var(--indent);
 		color: var(--color);
-		align-items: center;
+		position: relative;
 		transition: var(--transitionDefault);
-		justify-content: space-between;
+
+		&::after,
+		&::before {
+
+			position: absolute;
+			width: 56px;
+			height: 3px;
+			top: 56px;
+			right: 30px;
+			content: '';
+			background-color: var(--color);
+			transition: var(--transitionDefault);
+
+			@media ($mdWidth) {
+
+				width: 40px;
+
+			}
+
+		}
+
+		&::before {
+
+			transform: rotate(90deg);
+
+		}
 
 		@media ($mdWidth) {
 
 			font-size: 30px;
-			padding: 36px 30px;
-
-		}
-
-	}
-
-	&__arrow {
-
-		stroke: var(--color);
-		stroke-width: 3px;
-		margin-left: 20px;
-		transition: var(--transitionDefault);
-
-		@media ($mdWidth) {
-
-			width: 40px;
-			height: 40px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			overflow: hidden;
-
-			svg {
-
-				flex-shrink: 0;
-
-			}
+			padding: 36px 80px 36px 30px;
 
 		}
 
@@ -105,11 +103,17 @@
 
 		padding-bottom: 20px;
 
-	}
+		&::after {
 
-	&__item--open &__arrow {
+			transform: rotate(-45deg);
 
-		transform: rotate(45deg);
+		}
+
+		&::before {
+
+			transform: rotate(45deg);
+
+		}
 
 	}
 

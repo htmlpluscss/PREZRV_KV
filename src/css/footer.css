@@ -105,6 +105,15 @@
 
 		}
 
+		@media ($smWidth) {
+
+			margin: 0;
+			position: absolute;
+			top: 0;
+			right: 0;
+
+		}
+
 	}
 
 	&__copyright {
@@ -120,11 +129,23 @@
 
 		}
 
+		@media ($xsWidth) {
+
+			width: 90px;
+
+		}
+
 	}
 
 	&__menu {
 
 		position: relative;
+
+		@media ($smWidth) {
+
+			width: 100%;
+
+		}
 
 		.menu {
 
@@ -137,7 +158,34 @@
 
 			}
 
+			@media ($smWidth) {
+
+				column-gap: 0;
+				width: 100%;
+
+			}
+
 			&__item {
+
+				@media ($smWidth) {
+
+					width: calc( 100% / 3 );
+
+					&:nth-child(2),
+					&:nth-child(6) {
+
+						text-align: center;
+
+					}
+
+					&:nth-child(3),
+					&:nth-child(7) {
+
+						text-align: right;
+
+					}
+
+				}
 
 				&--logo {
 

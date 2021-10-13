@@ -32,6 +32,12 @@
 
 		}
 
+		@media ($smWidth) {
+
+			padding: 0;
+
+		}
+
 	}
 
 }

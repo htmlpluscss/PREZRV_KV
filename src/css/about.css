@@ -49,6 +49,14 @@
 		margin-left: var(--indent);
 		padding-right: 26px;
 
+		@media ($smWidth) {
+
+			width: 213px;
+			padding: 0;
+			margin: 0;
+
+		}
+
 		&::before {
 
 			position: absolute;

@@ -22,6 +22,25 @@
 
 		}
 
+		@media ($smWidth) {
+
+			display: none;
+
+		}
+
+	}
+
+}
+
+.btn-menu-toggle {
+
+	display: none;
+
+	@media ($smWidth) {
+
+		display: block;
+		outline:1px solid red;
+
 	}
 
 }

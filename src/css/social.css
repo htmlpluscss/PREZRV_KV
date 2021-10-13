@@ -1,8 +1,9 @@
 .social {
 
-	display: flex;
+	display: grid;
 	align-items: center;
-	column-gap: 30px;
+	gap: 30px;
+	grid-template-columns: auto auto auto;
 
 	&__link {
 

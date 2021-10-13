@@ -18,10 +18,28 @@
 
 	}
 
+	@media ($smWidth) {
+
+		padding: 86px 0 56px;
+
+		.section-circle {
+
+			top: 33px;
+
+		}
+
+	}
+
 	&__title {
 
 		text-align: center;
 		margin-bottom: 60px;
+
+		@media ($smWidth) {
+
+			margin-bottom: 27px;
+
+		}
 
 	}
 

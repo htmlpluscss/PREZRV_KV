@@ -45,6 +45,12 @@
 
 		}
 
+		@media ($smWidth) {
+
+			display: block;
+
+		}
+
 		&--between {
 
 			justify-content: space-between;

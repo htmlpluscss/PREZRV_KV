@@ -27,6 +27,12 @@
 
 		}
 
+		@media ($smWidth) {
+
+			flex-direction: column-reverse;
+
+		}
+
 	}
 
 	&__figcaption {

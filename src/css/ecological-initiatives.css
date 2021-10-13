@@ -52,6 +52,12 @@
 
 		}
 
+		@media ($smWidth) {
+
+			display: block;
+
+		}
+
 		&--reverse {
 
 			flex-direction: row-reverse;

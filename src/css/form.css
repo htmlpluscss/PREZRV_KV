@@ -84,6 +84,14 @@ legend {
 
 	}
 
+	@media ($smWidth) {
+
+		font-size: 16px;
+		padding: 0 40px;
+		line-height: 46px;
+
+	}
+
 	&--black {
 
 		color: var(--bg);
@@ -99,6 +107,12 @@ legend {
 				--color: var(--green);
 
 			}
+
+		}
+
+		@media ($smWidth) {
+
+			border-radius: 28px 0 28px 0;
 
 		}
 
@@ -131,6 +145,20 @@ legend {
 		&:hover:not(:focus) {
 
 			border-color: var(--green);
+
+		}
+
+	}
+
+	@media ($smWidth) {
+
+		height: 62px;
+		padding: 10px 27px;
+		font-size: 16px;
+
+		&::placeholder {
+
+			font-size: 14px;
 
 		}
 

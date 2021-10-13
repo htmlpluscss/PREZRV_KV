@@ -4,6 +4,7 @@
 	min-height: 100vh;
 	/* height: 900px; */
 	/* height: 1024px; */
+	/* height: 568px; */
 	position: relative;
 	text-align: center;
 	display: flex;
@@ -126,6 +127,12 @@
 		@media ($mdWidth) {
 
 			bottom: 48px;
+
+		}
+
+		@media ($smWidth) {
+
+			display: none;
 
 		}
 

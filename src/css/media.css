@@ -56,6 +56,13 @@
 
 @media ($smWidth) {
 
+	:root {
+
+		--indent: 26px;
+		--column: auto;
+
+	}
+
 	.hidden-sm {
 
 		display: none !important;
@@ -77,5 +84,11 @@
 }
 
 @media ($xsWidth) {
+
+	:root {
+
+		--indent: 16px;
+
+	}
 
 }

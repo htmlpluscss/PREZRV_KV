@@ -65,6 +65,12 @@
 		column-gap: 24px;
 		margin-top: 15px;
 
+		@media ($smWidth) {
+
+			display: block;
+
+		}
+
 		.btn {
 
 			min-width: 230px;
@@ -72,6 +78,13 @@
 			@media ($mdWidth) {
 
 				min-width: 220px;
+
+			}
+
+			@media ($smWidth) {
+
+				min-width: 160px;
+				margin: 26px auto;
 
 			}
 
