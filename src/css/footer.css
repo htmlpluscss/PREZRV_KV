@@ -95,6 +95,12 @@
 
 			}
 
+			@media ($smWidth) {
+
+				align-items: center;
+
+			}
+
 		}
 
 	}
@@ -146,13 +152,18 @@
 
 		}
 
+		@media ($smWidth) {
+
+			white-space: normal;
+			margin-top: 18px;
+			line-height: 17px;
+
+		}
+
 		@media ($xsWidth) {
 
 			width: 90px;
-			white-space: normal;
 			text-align: left;
-			margin: 18px 0 0;
-			line-height: 17px;
 
 		}
 
@@ -286,10 +297,8 @@
 
 		@media ($smWidth) {
 
-			top: 18px;
-			padding: 0 8px;
-			margin: 0;
-			height: 28px;
+			top: 0;
+			margin-top: 18px;
 
 		}
 
