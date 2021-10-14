@@ -5,6 +5,12 @@
 	background-position: top;
 	overflow: hidden;
 
+	@supports (background-image: -webkit-image-set(url(/img/bg-green.webp) 1x)) {
+
+		background-image: -webkit-image-set(url(/img/bg-green.webp) 1x);
+
+	}
+
 	&__figure {
 
 		display: flex;

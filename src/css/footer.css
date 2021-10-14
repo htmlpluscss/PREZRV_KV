@@ -47,10 +47,15 @@
 
 		}
 
+		@media ($mdWidth) {
+
+			right: var(--indent);
+
+		}
+
 		@media ($smWidth) {
 
 			bottom: -60px;
-			right: var(--indent);
 
 		}
 

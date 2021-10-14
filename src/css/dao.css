@@ -8,6 +8,12 @@
 	background-position: top;
 	background-color: rgba(233, 240, 245, 0.96);
 
+	@supports (background-image: -webkit-image-set(url(/img/bg-blue.webp) 1x)) {
+
+		background-image: -webkit-image-set(url(/img/bg-blue.webp) 1x);
+
+	}
+
 	@media ($mdWidth) {
 
 		padding: 170px 0 100px;

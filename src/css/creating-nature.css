@@ -5,6 +5,12 @@
 	background-image: url(/img/bg-green.png);
 	background-position: top;
 
+	@supports (background-image: -webkit-image-set(url(/img/bg-green.webp) 1x)) {
+
+		background-image: -webkit-image-set(url(/img/bg-green.webp) 1x);
+
+	}
+
 	@media ($mdWidth) {
 
 		padding: 66px 0;

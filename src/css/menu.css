@@ -7,6 +7,7 @@
 	@media ($mdWidth) {
 
 		display: grid;
+		column-gap: 34px;
 		gap: 34px;
 		grid-template-columns: auto auto auto auto auto auto auto;
 
@@ -51,7 +52,6 @@
 		font-size: 16px;
 		line-height: 30px;
 		letter-spacing: 0.02em;
-		white-space: nowrap;
 		transition: var(--transitionDefault);
 
 	}
