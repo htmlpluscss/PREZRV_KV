@@ -207,7 +207,15 @@
 
 			@media ($smWidth) {
 
-				display: none;
+				padding: 50px 12px 45px 15px;
+				margin-top: 46px;
+
+			}
+
+			@media ($xsWidth) {
+
+				width: 288px;
+				left: -5px;
 
 			}
 
@@ -223,6 +231,14 @@
 					height: auto;
 					right: -32px;
 					top: -100px;
+
+				}
+
+				@media ($smWidth) {
+
+					width: 130px;
+					top: -64px;
+					right: -21px;
 
 				}
 
