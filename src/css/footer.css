@@ -6,7 +6,7 @@
 	background-image: url(/img/topography.svg);
 	background-position: top;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
 
 	@media ($mdWidth) {
 
